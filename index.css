@@ -1,0 +1,300 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.ui{
+    height: 300vh;
+    width: 99vw;
+    background-color: black;
+}
+
+.img1{
+    position: fixed;
+    padding-left: 30%;
+    padding-top: 5%;
+    background-color: black;
+    margin-top: 0%;
+}
+.header{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container a{
+    margin-right: 50px;
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 2px solid transparent; 
+    transition: border-bottom-color 0.2s ;
+}
+.container a:hover {
+    border-bottom-color: #ff004f; 
+}
+.skill a{
+    margin-right: 50px;
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 2px solid transparent; 
+    transition: border-bottom-color 0.2s ;
+}
+.skill a:hover{
+    border-bottom-color: #ff004f; 
+    
+}
+.Education a{
+    margin-right: 50px;
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 2px solid transparent; 
+    transition: border-bottom-color 0.2s ;
+}
+.Education a:hover{
+    border-bottom-color: #ff004f; 
+    
+}
+.header h1{
+    font-size: 3em;
+    color: #ff004f;
+    padding-left: 200px;
+}
+.information {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 200px;
+    color: #fff;
+}
+.information button{
+    background-color: #ff004f;
+    height: 50px;
+    width: 160px;
+    color: #fff;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 10px;
+}
+
+.about{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 50%;
+    height: 650px;
+    width: 999px;
+    margin-left: 20%;
+    border-radius: 1%;
+    padding: 10px;
+    background-color: black;
+   
+}
+.bio h1{
+    font-size: 3em;
+    color: #ff004f;
+}
+.bio p{
+    color: #fff;
+    font-size: 1.5em;
+    padding-top: 25px;
+}
+.img2{
+    height: 500px;
+    width: 1100px;
+    border: 1px solid white;
+    background-color: rgba(235, 225, 225, 0.1);
+    border-radius: 10px;
+    background-image: url(./img2.png);
+    background-position: center;
+    background-size: cover;   
+}
+#img2{
+    color: #ff004f;
+}
+.headingabout{
+    position: absolute;
+    margin-top: 700px;
+    margin-left: 500px;
+    font-size: 2em;
+}
+.navskill{
+    display: flex;
+    flex-wrap: wrap;
+}
+.navskill a{
+    color: #ff004f;
+    font-size: 2em;
+}
+.Education a{
+    margin-left: 60px;
+}
+.Education h2{
+    padding-left: 60px;
+}
+#projects{
+    position: absolute;
+    color: #ff004f;
+    font-size: 3em;
+    margin-top: 110%;
+    margin-left: 30%;
+}
+.projects{
+    height: 650px;
+    width: 999px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 115%;
+    margin-left: 20%;
+    background-color: black;
+    padding-top: 50px;
+}
+.project1,.project2 h1,h2{
+    color: #fff;
+}
+.project1 a{
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 2px solid transparent; 
+    transition: border-bottom-color 0.2s ease;
+}
+.project1 a:hover{
+    border-bottom: #ff004f;
+}
+.project2 a{
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 2px solid transparent; 
+    transition: border-bottom-color 0.2s ease;
+}
+.project2 a:hover{
+    border-bottom: #ff004f;
+}
+.projects .project1,.project2{
+    height: 450px;
+    width: 350px;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+.projects .project1{
+    background: rgba(235, 225, 225, 0.9);
+    background-image: url(./b6.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.projects .project2{
+    background: rgba(235, 225, 225, 0.9);
+    background-image: url(./lib2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+@media only screen and (max-width: 1200px) {
+    .ui {
+        height: auto;
+    }
+
+    .img1 {
+        position: relative;
+        padding-left: 5%;
+        padding-top: 5%;
+        margin-top: 0;
+        background-color: black;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header h1 {
+        padding-left: 0;
+    }
+
+    .container {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .container a {
+        margin: 10px 0;
+    }
+
+    .information {
+        position: static;
+        margin: 20px;
+        text-align: center;
+    }
+
+    .about {
+        position: static;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-left: 5%;
+        width: 90%;
+    }
+    .bio{
+        margin-top: 100px;
+    }
+
+    .img2 {
+        height: 300px;
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .headingabout {
+        position: static;
+        margin: 40px;
+        text-align: center;
+    }
+
+    .navskill {
+        flex-direction: column;
+    }
+
+    .navskill a, .Education a {
+        margin: 10px 0;
+    }
+
+    .Education a {
+        margin-left: 0;
+    }
+
+    #projects {
+        position: static;
+        margin-top:200px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .projects {
+        position: static;
+        flex-direction: column;
+        margin-top: 40px;
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    .project1, .project2 {
+        height: 300px;
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .img1, .img2, .project1, .project2 {
+        height: 100%;
+        width: 90%;
+    }
+    .img1{
+        margin-left: -90%;
+    }   
+}
+
+

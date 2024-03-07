@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="ui">
+        <div class="header">
+            <h1>V.Shashank</h1>
+            <div class="container">
+               <a href="">Home</a>
+               <a href="#img2">About</a>
+               <a href="#projects">Projects</a>
+            </div>
+        </div>
+       <div class="img1">
+           <img height="600px" src="./img1.png" alt="">
+       </div>
+      <div class="ui">
+         <div class="information">
+            <h1>Web Developer</h1>
+            <h1>Hi, I'm Shashank</h1>
+            <h1>From india</h1>
+            <h1>Mobile:6302606088</h1>
+            <h1>Email:appushashank123@gmail.com</h1>
+            <button id="downloadBtn">Download CV</button>
+        </div>
+        <div id="img2" class="headingabout">
+            <h1>About </h1>
+        </div>
+        <div class="about">
+              <div  class="img2"></div>
+              <div class="bio">
+                  <p>My full name is Venkatesh gari Shashank and i have completed my Graduation in the stream of civil Engineering and After my Graduation I have came to Bangalore and joined in full Stack development course and gained the Practical and theory knowledge in IT Skills</p>
+                    <div class="navskill">
+                      <div class="skill">
+                          <a id="skill" onclick="opentab(skill)" href="">skills</a>
+                          <h2>HTML</h2>
+                          <h2>CSS</h2>
+                          <h2>Javascript</h2>
+                          <h2>React js</h2>
+                          <h2>Core JAVA </h2>
+                          <h2>Oracle SQL</h2>
+                      </div>
+                      <div class="Education">
+                          <a id="education" onclick="opentab(education)" href="">Education</a>
+                          <h2>Graduation</h2>
+                          <h2>Madanapalle institute of technology and science</h2>
+                          <h2>YOP:2023</h2><br>
+                          <h2>Intermediate</h2>
+                          <h2>LRG Naidu junior college</h2>
+                          <h2>YOP:2019</h2><br>
+                          <h2>10th Class</h2>
+                          <h2>Sri Chaitanya Techno School</h2>
+                          <h2>YOP:2017</h2>
+                      </div>
+                    </div>
+                </div>
+        </div>
+        <div><h1 id="projects">Projects</h1></div>
+        <div  class="projects">
+            <div class="project1">
+                <h1>Title:Burger Website</h1>
+                <h2>Skill used: HTML,CSS,Javascript,React js</h2>
+                <h2>Link:</h2>
+                <a href="https://shashank-burger-house.netlify.app/" target="_blank">https://shashank-burger-house.netlify.app/</a>
+            </div>
+            <div class="project2">
+                <h1>Tilte:Library Website</h1>
+                <h2>Skill used: HTML,CSS,Javascript,React js</h2>
+                <h2>Link:</h2>
+                <a href="https://shashank-library.netlify.app/" target="_blank">https://shashank-library.netlify.app/</a>
+            </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script>
+        document.getElementById('downloadBtn').addEventListener('click', function() {
+            
+            var downloadLink = document.createElement('a');
+            downloadLink.href = './V.SHASHANK_RESUME.pdf';
+            downloadLink.download = 'V.SHASHANK_RESUME.pdf';
+            document.body.appendChild(downloadLink);
+            downloadLink.click();
+            document.body.removeChild(downloadLink);
+        });
+    </script>
+</body>
+</html>
